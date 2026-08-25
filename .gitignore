@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+
+# Operational data and generated products are staged locally, never committed.
+input-data/nvta/**
+!input-data/nvta/.gitkeep
+outputs/**
+!outputs/.gitkeep
+logs/**
+!logs/.gitkeep
+
+# Native assignment products and caches can be very large.
+**/.dtalite_conversion_cache/
+**/route_assignment.csv
+**/vehicle_trajectory.csv
+**/od_performance.csv
+**/*.omx
+**/*.pkl
+**/*.joblib
+!cbi/src/congestion_boundary_mapping/resources/ridge_completion/ml_run/models/*.joblib

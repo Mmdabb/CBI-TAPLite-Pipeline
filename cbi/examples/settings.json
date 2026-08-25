@@ -1,0 +1,12 @@
+{
+  "interval_minutes": 15,
+  "periods": {"AM": [360, 540], "MD": [540, 900], "PM": [900, 1140]},
+  "wide_window": [300, 1320],
+  "cutoff_ratio": 0.7,
+  "confidence_min": 30,
+  "minimum_episode_minutes": 30.0,
+  "merge_gap_minutes": 15.0,
+  "minimum_discharge_minutes": 30.0,
+  "minimum_calibration_episodes": 3,
+  "output_numeric_rounding": true
+}

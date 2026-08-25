@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbi-taplite-pipeline"
+version = "1.0.0"
+description = "Reproducible TMC-to-dashboard NVTA CBI and TAPlite monorepo pipeline"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "joblib>=1.3,<2",
+  "matplotlib>=3.8,<4",
+  "networkx>=3.2,<4",
+  "numpy>=1.26,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.1,<3",
+  "psutil>=5.9,<7",
+  "pyproj>=3.6,<4",
+  "scikit-learn>=1.4,<2",
+  "scipy>=1.11,<2",
+  "shapely>=2.0,<3",
+]
+
+[project.optional-dependencies]
+dev = ["build>=1.2,<2", "pytest>=8,<9", "ruff>=0.6,<1"]
+
+[project.scripts]
+cbi-taplite-pipeline = "cbi_taplite_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tmc-matching/src", "cbi/src", "corridor-performance-dashboard/src", "nvta-taplite-workflow", "nvta-taplite-workflow/src"]
+testpaths = ["tests"]

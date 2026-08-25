@@ -1,0 +1,9 @@
+* text=auto
+*.npy binary
+*.png binary
+*.pdf binary
+*.whl binary
+
+# Operational lookup arrays are required package resources and are versioned
+# through Git LFS so the monorepo remains cloneable on GitHub.
+nvta-taplite-workflow/src/dtalite4cube/resources/**/*.npy filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,5 @@
+{
+  "tmc": {"tmc": "tmc", "road": "road", "direction": "direction"},
+  "link": {"link_id": "link_id", "from_node_id": "from_node_id", "to_node_id": "to_node_id"},
+  "node": {"node_id": "node_id", "x_coord": "x_coord", "y_coord": "y_coord"}
+}

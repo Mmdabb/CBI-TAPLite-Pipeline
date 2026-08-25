@@ -1,0 +1,5 @@
+{
+  "metadata": {"tmc": "tmc", "road": "road", "direction": "direction", "road_order": "road_order"},
+  "readings": {"tmc_code": "tmc_code", "measurement_tstamp": "measurement_tstamp", "speed": "speed"},
+  "mapping": {"tmc": "tmc", "link_id": "link_id", "from_node_id": "from_node_id", "to_node_id": "to_node_id"}
+}

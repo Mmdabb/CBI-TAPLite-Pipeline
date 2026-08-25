@@ -1,0 +1,27 @@
+{
+  "mapping_products": {"am": "am", "md": "md", "pm": "pm"},
+  "periods": {
+    "am": {"start_min": 360, "end_min": 540},
+    "md": {"start_min": 540, "end_min": 900},
+    "pm": {"start_min": 900, "end_min": 1140}
+  },
+  "cube_volume_columns": {"am": "I4AMVOL", "md": "I4MDVOL", "pm": "I4PMVOL"},
+  "strict_qa_only": false,
+  "strict_qa_statuses": ["matched"],
+  "minimum_tmc_model_length_coverage": 0.8,
+  "minimum_corridor_observed_length_coverage": 0.8,
+  "minimum_corridor_model_length_coverage": 0.8,
+  "congestion_cutoff_ratio": 0.7,
+  "mape_minimum_observed_speed_mph": 5.0,
+  "comparison_interval_minutes": 15,
+  "model_source_interval_minutes": 5,
+  "write_figures": true,
+  "selected_tmc_count_per_corridor": 5,
+  "figure_dpi": 160,
+  "scatter_figure_dpi": 160,
+  "heatmap_speed_min_mph": 0.0,
+  "heatmap_speed_max_mph": 75.0,
+  "heatmap_error_max_mph": 40.0,
+  "worker_fraction": 0.5,
+  "worker_sample_seconds": 0.25
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corridor-performance-dashboard"
+version = "1.0.0"
+description = "Corridor profile measurement and integrated static dashboard generation"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
+  "psutil>=5.9,<7",
+  "scikit-learn>=1.4,<2",
+  "scipy>=1.11,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.6,<1"]
+
+[project.scripts]
+corridor-dashboard = "corridor_performance_dashboard.cli:main"
+corridor-measurement = "corridor_measurement.cli:main"
+integrated-corridor-dashboard = "corridor_dashboard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+corridor_performance_dashboard = ["config/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

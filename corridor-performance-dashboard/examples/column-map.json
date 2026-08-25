@@ -1,0 +1,7 @@
+{
+  "mapping": {"tmc": "tmc", "link_id": "link_id", "from_node_id": "from_node_id", "to_node_id": "to_node_id"},
+  "route_summary": {"tmc": "tmc", "route_link_count": "route_link_count", "confidence": "confidence", "status": "status"},
+  "performance": {"link_id": "link_id", "volume": "volume", "doc": "doc", "P": "P"},
+  "link": {"link_id": "link_id", "from_node_id": "from_node_id", "to_node_id": "to_node_id"},
+  "observed": {"tmc_code": "tmc_code", "measurement_tstamp": "measurement_tstamp", "speed": "speed"}
+}

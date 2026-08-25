@@ -1,0 +1,50 @@
+{
+  "purpose": "Self-contained spatial and Ridge boundary-completion runtime",
+  "source_runs": {
+    "ml": "packaged-fallback/ml-run",
+    "spatial": "packaged-fallback/spatial-run",
+    "comparison": "packaged-fallback/comparison-run"
+  },
+  "notes": {
+    "out_of_fold_predictions.csv": "Filtered to aggregate_all_days, corridor_held_out, ridge_core rows required by build_error_table.",
+    "joblib_models": "Retained for fitted-model lineage; mapping applies frozen experimental_network_boundaries.csv predictions."
+  },
+  "files": {
+    "comparison_run/outputs/validation_benchmark_detail.csv": {
+      "size_bytes": 180493,
+      "sha256": "8de1dd7f7850be11738e85788ee4b1a56d4cbaf70c35c8dd999130b3eb903b56"
+    },
+    "ml_run/experimental_network_boundaries.csv": {
+      "size_bytes": 36641902,
+      "sha256": "5df6aafb4eb2574dd60f2acba051a8973f44623cc6687acc7cccb6b10d3d75a5"
+    },
+    "ml_run/feature_manifest.json": {
+      "size_bytes": 38744,
+      "sha256": "95594036172e7eac536c0e6aa03e5486c281b2febb947e142501fd3329470025"
+    },
+    "ml_run/metrics/out_of_fold_predictions.csv": {
+      "size_bytes": 895735,
+      "sha256": "6129927ee78206fbd433cb1b5bafc6245a60a7df504b773755092d50295176e8"
+    },
+    "ml_run/models/ridge_core__target_log_span_min.joblib": {
+      "size_bytes": 9946,
+      "sha256": "82a50a86325ccbfca2bef5019d7ba1ad69bf5b865ba4c004fe012ba7b00bf6a7"
+    },
+    "ml_run/models/ridge_core__target_logit_t2_fraction.joblib": {
+      "size_bytes": 9946,
+      "sha256": "938012b919d04ccb2f3deb93635ea583271c344704c36159c90f0ffbe917a527"
+    },
+    "ml_run/models/ridge_core__target_t2_relative_min.joblib": {
+      "size_bytes": 9946,
+      "sha256": "c52abe0d41ea4dea7d63be4086fe865d9e0684c4e4e727d33c52ee8bf0757376"
+    },
+    "spatial_run/input-snapshot/tmc_period_representatives.csv": {
+      "size_bytes": 1301841,
+      "sha256": "7142918d259be60d6b070933ddb4dcb52cf58ccd06d1214992e12b91e72edae6"
+    },
+    "spatial_run/outputs/expanded_link_t2.csv": {
+      "size_bytes": 5035485,
+      "sha256": "40fc3f36dcdff32969a1747d1ca53fcbec0d8c00cf10752d486ff0d390ea49bf"
+    }
+  }
+}

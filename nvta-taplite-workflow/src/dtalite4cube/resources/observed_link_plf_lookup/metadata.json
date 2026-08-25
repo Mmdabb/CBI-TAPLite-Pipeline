@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "observed PLF",
+  "precedence": [
+    "actual direct",
+    "virtual direct"
+  ],
+  "actual_rows": 5581,
+  "virtual_rows": 298,
+  "combined_rows": 5879,
+  "overlapping_node_pairs": 0,
+  "actual_source": "10-network-qvdf/actual/observed-link-plf/observed_link_plf_overrides.npy",
+  "virtual_source": "10-network-qvdf/virtual/observed-link-plf/observed_link_plf_overrides.npy",
+  "unit": "dimensionless"
+}

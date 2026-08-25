@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "observed speed boundaries",
+  "precedence": [
+    "actual direct",
+    "virtual direct"
+  ],
+  "actual_rows": 5581,
+  "virtual_rows": 298,
+  "combined_rows": 5879,
+  "overlapping_node_pairs": 0,
+  "actual_source": "10-network-qvdf/actual/observed-link-speed-boundaries/observed_link_speed_boundaries.npy",
+  "virtual_source": "10-network-qvdf/virtual/observed-link-speed-boundaries/observed_link_speed_boundaries.npy",
+  "speed_unit": "mph"
+}

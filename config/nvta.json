@@ -1,0 +1,51 @@
+{
+  "input_root": "input-data/nvta",
+  "output_root": "outputs/full-run",
+  "workers": 10,
+  "periods": {"am": "0600_0900", "md": "0900_1500", "pm": "1500_1900"},
+  "files": {
+    "tmc_metadata": "ritis/TMC_Identification.csv",
+    "tmc_readings": "ritis/Readings.csv",
+    "matching_input": "matching",
+    "base_network": "network/gmns_network_am_md_pm",
+    "cube_scenario": "taplite-scenario",
+    "corridor_definitions": null,
+    "profile_selection_overrides": null,
+    "qvdf_override_dictionary": null
+  },
+  "matching": {
+    "source_crs_epsg": 4326,
+    "working_crs_epsg": 2248,
+    "lane_class": "auto",
+    "write_candidates": false
+  },
+  "cbi": {
+    "settings": null,
+    "generate_figures": true,
+    "minimum_network_qvdf_episodes": 3
+  },
+  "spatial_t2": {
+    "enabled": true,
+    "config": "cbi/src/t2_coverage_expansion/config/default.json"
+  },
+  "ridge": {
+    "enabled": true,
+    "cv_folds": 5,
+    "random_seed": 42,
+    "forest_estimators": 250,
+    "model_names": ["ridge_core"]
+  },
+  "taplite": {
+    "iterations": 10,
+    "qvdf_profile_mode": 2,
+    "vdf_type": 2,
+    "kernel_source": "pypi",
+    "qvdf_smoothing": true,
+    "conversion_cache": true
+  },
+  "dashboard": {
+    "settings": null,
+    "worker_fraction": 0.5,
+    "exclude_managed_corridors": true
+  }
+}

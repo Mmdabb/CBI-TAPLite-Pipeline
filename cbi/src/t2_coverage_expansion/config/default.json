@@ -1,0 +1,29 @@
+{
+  "episode_contract": "pre_filter",
+  "periods": {
+    "AM": [360, 540],
+    "MD": [540, 900],
+    "PM": [900, 1140]
+  },
+  "worker_fraction": 0.7,
+  "map_anchor_statuses": ["matched"],
+  "minimum_map_confidence": 50.0,
+  "require_screened_acceptance_for_anchor": true,
+  "minimum_daily_probe_days": 3,
+  "maximum_daily_t2_std_hours": 1.0,
+  "profile_threshold_ratio": 0.7,
+  "profile_minimum_episode_minutes": 30,
+  "profile_merge_gap_minutes": 15,
+  "profile_minimum_coverage": 0.8,
+  "maximum_interpolation_gap_miles": 10.0,
+  "maximum_extrapolation_miles": 5.0,
+  "maximum_abs_propagation_minutes_per_mile": 20.0,
+  "bracket_assignment_method": "linear_t2",
+  "enable_gap_bridging": true,
+  "maximum_bridge_path_miles": 3.0,
+  "bridge_off_corridor_penalty": 6.0,
+  "bridge_ramp_penalty": 12.0,
+  "validation_folds": 5,
+  "enable_linear_t2_fallback": true,
+  "enable_analog_template": false
+}

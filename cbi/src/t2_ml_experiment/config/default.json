@@ -1,0 +1,14 @@
+{
+  "cbi_run_dir": "REQUIRED_EXPLICIT_CBI_RUN",
+  "boundary_mapping_run_dir": "REQUIRED_EXPLICIT_BOUNDARY_RUN",
+  "spatial_run_dir": "REQUIRED_EXPLICIT_SPATIAL_RUN",
+  "output_root": "outputs/t2-ml-experiment",
+  "random_seed": 42,
+  "cv_folds": 5,
+  "worker_fraction": 0.65,
+  "max_workers": 15,
+  "forest_estimators": 250,
+  "reliable_minimum_days": 3,
+  "reliable_maximum_t2_std_hours": 1.5,
+  "temporal_holdout_days": 5
+}

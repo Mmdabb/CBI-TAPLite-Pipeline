@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.joblib binary
+src/congestion_boundary_mapping/resources/ridge_completion/ml_run/experimental_network_boundaries.csv filter=lfs diff=lfs merge=lfs -text

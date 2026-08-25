@@ -1,0 +1,16 @@
+{
+  "distribution": "taplite4mpo-pre-release",
+  "version": "0.4.0rc1",
+  "pypi_project_url": "https://pypi.org/project/taplite4mpo-pre-release/",
+  "artifact_filename": "taplite4mpo_pre_release-0.4.0rc1-cp311-cp311-win_amd64.whl",
+  "wheel_sha256": "4ED012D7DB6446D13BDA7345523061693F540BA17087968A61BFFC112FAAFC09",
+  "native_module": "pytaplite._native",
+  "native_sha256": "C4CA9AA4B74B9014DEA347FB4193B31CA7D42E9BE32DF6E05AE0CC45EC96785E",
+  "python_tag": "cp311",
+  "platform_tag": "win_amd64",
+  "verified_contracts": [
+    "qvdf_profile_mode=2 requires a valid observed t2 even for freeway link types",
+    "a positive-volume freeway link with blank t2 emits P=0, t2=0, and flat_missing_observation"
+  ],
+  "verified_utc": "2026-08-24T03:15:42Z"
+}
